@@ -1,0 +1,60 @@
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-container .cards {
+    width: 25%;
+    height: 200px;
+    background-color: lightgray;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.card-head-img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background: red; */
+    align-items: center;
+}
+.card-container .cards .card-heading {
+    font-size: 17px;
+    width: 50%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.card-container .cards .card-logo {
+    font-size: 13px;
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.card-logo .fa {
+    font-size: 40px;
+}
+.card-logo .fa-google {
+    color: #3cba54;
+}
+.card-logo .fa-facebook {
+    color: #4267b3;
+}
+.card-logo .fa-amazon {
+    color: #e47911;
+}
+.card-container .cards .card-text {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.card-text span {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
