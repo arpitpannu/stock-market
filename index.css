@@ -1,60 +1,89 @@
-.card-container {
+.container {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.card-container .cards {
-    width: 25%;
-    height: 200px;
-    background-color: lightgray;
-    margin: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-    display: flex;
-    padding: 20px;
     box-sizing: border-box;
-    flex-wrap: wrap;
-}
-.card-head-img {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /* background: red; */
     align-items: center;
+    justify-content: center;
 }
-.card-container .cards .card-heading {
-    font-size: 17px;
-    width: 50%;
-    box-sizing: border-box;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-.card-container .cards .card-logo {
-    font-size: 13px;
-    width: 50%;
+.container .table {
+    width: 90%;
+    border: 1px solid lightgray;
+    margin: 10px;
     box-sizing: border-box;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    flex-direction: column;
 }
-.card-logo .fa {
-    font-size: 40px;
+.searchDiv {
+    width: 100;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
 }
-.card-logo .fa-google {
-    color: #3cba54;
+.searchDiv label {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: capitalize;
 }
-.card-logo .fa-facebook {
-    color: #4267b3;
+.searchDiv input {
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: lightgray;
+    border: none;
+    outline: none;
+    padding: 3px 20px;
 }
-.card-logo .fa-amazon {
-    color: #e47911;
-}
-.card-container .cards .card-text {
+.company-Detail-Table {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    text-align: center;
 }
-.card-text span {
-    font-size: 25px;
+
+.table-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    height: 40px;
+    font-size: 15px;
     font-weight: bold;
-    text-align: center;
+}
+.details {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+}
+.companyName,
+.companyNameText {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.companySymbol .companySymbolText {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.marketCap .marketCapText {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.currentPrice .currentPriceText {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
